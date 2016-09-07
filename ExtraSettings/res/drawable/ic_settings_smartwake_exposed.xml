@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:src="@drawable/v_smartwake_icon" android:tint="@color/ic_settings_icons_exposed"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.extrasettings" />

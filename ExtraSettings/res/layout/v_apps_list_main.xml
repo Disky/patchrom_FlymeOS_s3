@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.extrasettings">
+    <com.v.common.SearchEditText android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/filter_edit" android:background="@drawable/v_search_bar_edit_selector" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:hint="@string/smartwake_settings_hint_search_app" android:singleLine="true" />
+    <ListView android:id="@id/appinfo_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

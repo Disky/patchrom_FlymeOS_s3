@@ -1,0 +1,8 @@
+/autopatch/*
+/board/*
+/history_package/*
+/out/*
+cm_boot.img
+newui_boot.img
+ota.zip
+libwebviewchromium.so
