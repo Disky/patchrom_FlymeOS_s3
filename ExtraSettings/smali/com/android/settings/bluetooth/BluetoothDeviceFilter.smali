@@ -1,0 +1,187 @@
+.class final Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter;
+.super Ljava/lang/Object;
+.source "BluetoothDeviceFilter.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$1;,
+        Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$NapFilter;,
+        Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$PanuFilter;,
+        Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$TransferFilter;,
+        Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$AudioFilter;,
+        Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$ClassUuidFilter;,
+        Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$UnbondedDeviceFilter;,
+        Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;,
+        Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$AllFilter;,
+        Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+    }
+.end annotation
+
+
+# static fields
+.field static final ALL_FILTER:Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+.field static final BONDED_DEVICE_FILTER:Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+.field private static final FILTERS:[Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+.field static final UNBONDED_DEVICE_FILTER:Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    .prologue
+    const/4 v3, 0x0
+
+    .line 45
+    new-instance v0, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$AllFilter;
+
+    invoke-direct {v0, v3}, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$AllFilter;-><init>(Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$1;)V
+
+    sput-object v0, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter;->ALL_FILTER:Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+    .line 48
+    new-instance v0, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;
+
+    invoke-direct {v0, v3}, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$BondedDeviceFilter;-><init>(Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$1;)V
+
+    sput-object v0, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter;->BONDED_DEVICE_FILTER:Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+    .line 51
+    new-instance v0, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$UnbondedDeviceFilter;
+
+    invoke-direct {v0, v3}, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$UnbondedDeviceFilter;-><init>(Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$1;)V
+
+    sput-object v0, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter;->UNBONDED_DEVICE_FILTER:Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+    .line 54
+    const/4 v0, 0x5
+
+    new-array v0, v0, [Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+    const/4 v1, 0x0
+
+    sget-object v2, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter;->ALL_FILTER:Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    new-instance v2, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$AudioFilter;
+
+    invoke-direct {v2, v3}, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$AudioFilter;-><init>(Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$1;)V
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    new-instance v2, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$TransferFilter;
+
+    invoke-direct {v2, v3}, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$TransferFilter;-><init>(Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$1;)V
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x3
+
+    new-instance v2, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$PanuFilter;
+
+    invoke-direct {v2, v3}, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$PanuFilter;-><init>(Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$1;)V
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x4
+
+    new-instance v2, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$NapFilter;
+
+    invoke-direct {v2, v3}, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$NapFilter;-><init>(Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$1;)V
+
+    aput-object v2, v0, v1
+
+    sput-object v0, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter;->FILTERS:[Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 63
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 64
+    return-void
+.end method
+
+.method static getFilter(I)Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+    .locals 4
+    .param p0, "filterType"    # I
+
+    .prologue
+    .line 74
+    if-ltz p0, :cond_1
+
+    sget-object v1, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter;->FILTERS:[Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+    array-length v1, v1
+
+    if-ge p0, v1, :cond_1
+
+    .line 75
+    sget-object v1, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter;->FILTERS:[Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+    aget-object v0, v1, p0
+
+    .line 83
+    :cond_0
+    :goto_0
+    return-object v0
+
+    .line 78
+    :cond_1
+    invoke-static {p0}, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilterEx;->getFilterEx(I)Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+    move-result-object v0
+
+    .line 79
+    .local v0, "filterEx":Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+    if-nez v0, :cond_0
+
+    .line 82
+    const-string v1, "BluetoothDeviceFilter"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "Invalid filter type "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, " for device picker"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 83
+    sget-object v0, Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter;->ALL_FILTER:Lcom/android/extrasettings/bluetooth/BluetoothDeviceFilter$Filter;
+
+    goto :goto_0
+.end method

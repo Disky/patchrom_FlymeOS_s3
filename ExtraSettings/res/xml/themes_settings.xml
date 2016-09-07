@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/personal_settings" settings:keywords="@string/keywords_personal"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.extrasettings">
+    <Preference android:id="@id/themes_layers_showcase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_layers_showcase" android:key="toggle_layers_showcase" android:summary="@string/tf_layers_showcase_summary">
+        <intent android:targetPackage="com.lovejoy777.showcase" android:action="android.intent.action.MAIN1" android:targetClass="com.lovejoy777.showcase.MainActivity1" />
+    </Preference>
+    <Preference android:id="@id/themes_layers_manager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_layers_manager" android:key="toggle_layers_manager" android:summary="@string/tf_layers_manager_summary">
+        <intent android:targetPackage="com.lovejoy777.rroandlayersmanager" android:action="android.intent.action.MAIN1" android:targetClass="com.lovejoy777.rroandlayersmanager.menu" />
+    </Preference>
+    <Preference android:id="@id/themes_layers_reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_layers_reset" android:key="toggle_layers_reset" android:summary="@string/tf_layers_reset_summary" />
+    <Preference android:id="@id/themes_search_iconpack" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_search_iconpack" android:key="toggle_search_iconpack" android:summary="@string/tf_search_iconpack_summary">
+        <intent android:action="android.intent.action.VIEW" android:data="https://play.google.com/store/search?q=icon+pack" />
+    </Preference>
+    <Preference android:id="@id/themes_icon_apply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_icon_apply" android:key="toggle_icon_apply" android:summary="@string/tf_icon_apply_summary">
+        <intent android:targetPackage="es.tfandroid.tflauncher" android:targetClass="es.tfandroid.tflauncher.settings.SettingsActivity" />
+    </Preference>
+</PreferenceScreen>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="manage_notification_access_summary_nonzero">
+        <item quantity="other">%d اپلیکیشنز اطلاعات کو پڑھ سکتے ہیں</item>
+        <item quantity="one">%d اپلیکیشن اطلاعات کو پڑھ سکتا ہے</item>
+    </plurals>
+</resources>

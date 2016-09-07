@@ -1,0 +1,10 @@
+#!/system/bin/sh
+# Init.d test
+
+if [ -e /data/Test.log ]; then
+rm /data/Test.log
+fi
+
+echo Disky > /data/Test.log
+echo Init.d is working !!! >> /data/Test.log
+echo "excecuted on $(date +"%d-%m-%Y %r" )" >> /data/Test.log

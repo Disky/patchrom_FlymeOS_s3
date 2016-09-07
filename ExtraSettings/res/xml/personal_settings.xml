@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/personal_settings" settings:keywords="@string/keywords_personal"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.extrasettings">
+    <SwitchPreference android:id="@id/personal_settings_net" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_show_net" android:key="toggle_net_speed" android:summary="@string/tf_show_net_summary" />
+    <SwitchPreference android:id="@id/personal_double_tap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_double_tap" android:key="toggle_double_tap" android:summary="@string/tf_double_tap_summary" />
+    <SwitchPreference android:id="@id/personal_flash_call" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_flash_call" android:key="toggle_flash_call" android:summary="@string/tf_flash_call_summary" />
+    <SwitchPreference android:id="@id/personal_sound_cap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_sound_cap" android:key="toggle_sound_cap" android:summary="@string/tf_sound_cap_summary" />
+    <EditTextPreference android:id="@id/cambioDpi" android:title="@string/tf_change_dpi" android:key="edt_cambioDpi" android:summary="@string/tf_change_dpi_summary" android:defaultValue="480" />
+    <SwitchPreference android:id="@id/personal_vibrate_buttons" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_vibrate_buttons" android:key="toggle_vibrate_buttons" android:summary="@string/tf_vibrate_buttons_summary" />
+    <SwitchPreference android:id="@id/personal_back_kill" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_back_kill" android:key="toggle_back_kill" android:summary="@string/tf_back_kill_summary" />
+    <SwitchPreference android:id="@id/personal_multi_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_multi_user" android:key="toggle_multi_user" android:summary="@string/tf_multi_user_summary" />
+    <SwitchPreference android:id="@id/personal_main_keys" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/tf_main_keys" android:key="toggle_main_keys" android:summary="@string/tf_main_keys_summary" />
+</PreferenceScreen>

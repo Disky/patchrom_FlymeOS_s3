@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="manage_notification_access_summary_nonzero">
+        <item quantity="other">%d অ্যাপ নোটিফিকেশন পাঠ করতে পারে।</item>
+        <item quantity="one">%d অ্যাপ নোটিফিকেশন পাঠ করতে পারে।</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="other">You are now %1$d steps away from being a developer.</item>
+        <item quantity="one">You are now %1$d step away from being a developer.</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">পাসওয়ার্ডে অন্তত %d অক্ষর থাকতে হবে</item>
+        <item quantity="one">পাসওয়ার্ডে অবশ্যই অন্তত ১টি বর্ণ থাকতে হবে</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">পাসওয়ার্ডে অবশ্যই অন্তত %d ছোট হাতের অক্ষর থাকতে হবে</item>
+        <item quantity="one">পাসওয়ার্ডে অবশ্যই অন্তত ১টি ছোট হাতের অক্ষর থাকতে হবে</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">পাসওয়ার্ডে অবশ্যই অন্তত %d বড় হাতের অক্ষর থাকতে হবে</item>
+        <item quantity="one">পাসওয়ার্ডে অবশ্যই অন্তত ১টি বড় হাতের অক্ষর থাকতে হবে</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">পাসওয়ার্ডে অন্তত %d সংখ্যাবাচক অংক থাকতে হবে</item>
+        <item quantity="one">পাসওয়ার্ডে অবশ্যই অন্তত ১টি সংখ্যাবাচক অংক থাকতে হবে</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">পাসওয়ার্ডে অন্তত %d বিশেষ প্রতীক থাকতে হবে</item>
+        <item quantity="one">পাসওয়ার্ডে অবশ্যই অন্তত ১টি বিশেষ প্রতীক থাকতে হবে</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">পাসওয়ার্ডে অন্তত %d বর্ণবর্হিভূত ক্যারেক্টার থাকতে হবে</item>
+        <item quantity="one">পাসওয়ার্ডে অবশ্যই অন্তত ১টি বর্ণবর্হিভূত ক্যারেক্টার থাকতে হবে</item>
+    </plurals>
+    <plurals name="wrong_pin_code">
+        <item quantity="other">ভুল সিম পিন কোড, আপনার %d প্রচেষ্টা অবশিষ্ট রয়েছে।</item>
+        <item quantity="one">ভুল সিম পিন কোড, আপনার %d প্রচেষ্টা অবশিষ্ট রয়েছে, যার পর ডিভাইসটি আনলক করতে আপনাকে অবশ্যই আপনার ক্যারিয়ারের সাথে কনটাক্ট করতে হবে।</item>
+    </plurals>
+    <plurals name="manage_condition_providers_summary_nonzero">
+        <item quantity="other">%d অ্যাপ শর্ত প্রদান করে</item>
+        <item quantity="one">%d অ্যাপ শর্ত প্রদান করে</item>
+    </plurals>
+    <plurals name="print_search_result_count_utterance">
+        <item quantity="other">%1$s প্রিন্টার পাওয়া গেছে</item>
+        <item quantity="one">%1$s প্রিন্টার পাওয়া গেছে</item>
+    </plurals>
+</resources>

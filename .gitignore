@@ -1,0 +1,7 @@
+/autopatch/*
+/bak/*
+/board/*
+/history_package/*
+/out/*
+ota.zip
+libwebviewchromium.so

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/breath_light_title"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.extrasettings">
+    <SwitchPreference android:title="@string/breath_light_charging" android:key="charging" android:summary="@string/breath_light_charging_summary" />
+    <SwitchPreference android:title="@string/breath_light_battery_low" android:key="battery_low" android:summary="@string/breath_light_battery_low_summary" />
+    <SwitchPreference android:title="@string/breath_light_missing_event" android:key="missing_event" android:summary="@string/breath_light_missing_event_summary" />
+</PreferenceScreen>
